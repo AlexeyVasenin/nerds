@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>catalog</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+<!--   <script>
+function showValue(newValue)
+{
+document.getElementById("range").innerHTML=newValue;
+}
+</script> -->
+</head>
+<body>
+  <header class="page-header clearfix">
+   <div class="page-header__logo">
+    <a href="nerds-index.html">
+      <img src="img/main-header-logo.png" width="139" height="56" alt="Nerds">
+    </a>
+  </div>
+  <nav class="main-nav">
+    <ul class="main-nav__items clearfix">
+      <li class="main-nav__item"><a href="nerds-index.html" class="current">студия</a></li>
+      <li class="main-nav__item"><a href="#">клиенты</a></li>
+      <li class="main-nav__item"><a href="catalog.html">магазин</a></li>
+      <li class="main-nav__item"><a href="#">контакты</a></li>
+    </ul>
+  </nav>
+  <div class="user-block">
+    <a class="block" href="#"><span class="oi oi-trash"></span>  корзина</a>
+  </div> 
+  <div class="modal-content">
+   <div class="modal-block"></div>
+   <div class="modal-content-close">закрыть</div>
+   <h2 class="modal-content-title">Корзина</h2>
+   <p>товар отсутствует</p>
+ </div>
+</header>
+<section class="page clearfix">
+  <section class="title-header">
+    <h1>Добро пожаловать в магазин готовых макетов</h1>
+  </section>
+  <section class="filtr">
+    <form class="filtr__form" action="" method="post">
+      <h3 class="filtr__title">стоимость:</h3>
+      <div class="filtr-range">
+       <div class="filtr-control">
+         <div class="filtr-control__after"></div>
+         <div class="filtr-control__before"></div>
+       </div>
+       <div class="filtr-price clearfix">
+            <!-- <input type="range" name=""
+            onchange="showValue(this.value)" min="5" max = "100" step="2"
+            value="50"> -->
+            <div class="filtr-price__low">
+              <span>ОТ</span>
+              <input type="text" value="0">
+            </div>
+            <div class="filtr-price__full">
+              <span>ДО</span>
+              <input type="text" value="15500">
+            </div>
+          </div>
+        </div>
+        <div class="filtr__set" >
+          <h3 class="filtr__title">сетка:</h3>
+          <input type="radio" name="radio" class="radio-input" id="radio-input-1" value="btn1" checked>
+          <label  class="filtr__toggles" for="radio-input-1">Срань</label>
+          <br>
+          <input type="radio" name="radio" class="radio-input" id="radio-input-2" value="btn2">
+          <label class="filtr__toggles" for="radio-input-2">Господь</label>
+          <br>
+          <input type="radio" name="radio" class="radio-input" id="radio-input-3" value="btn3">
+          <label class="filtr__toggles" for="radio-input-3">Сатана</label>
+        </div>
+        <div class="filtr__wrapp">
+          <h3 class="filtr__title">особенности:</h3>
+          <label class="checkbox-filtr" >
+            <input type="checkbox"></input>
+            <span class="checkbox-indicator"></span>
+            Слайдер
+          </label>
+          <br>
+          <label class="checkbox-filtr" >
+            <input type="checkbox"></input>
+            <span class="checkbox-indicator"></span>
+            Блок приемушеств
+          </label>
+          <br>
+          <label class="checkbox-filtr" >
+            <input type="checkbox"></input>
+            <span class="checkbox-indicator"></span>
+            Новости
+          </label>
+          <br>
+          <label class="checkbox-filtr" >
+            <input type="checkbox"></input>
+            <span class="checkbox-indicator"></span>
+            Галлерея
+          </label>
+          <br>
+          <label class="checkbox-filtr" >
+            <input type="checkbox"></input>
+            <span class="checkbox-indicator"></span>
+            Корзина
+          </label>
+          <br>
+          <button type="button" class="btn btn-filtr">Показать</button>
+        </form>
+      </section>
+      <section class="catalog">
+        <div class="catalog__sort">
+          <span>
+            Сортировать
+          </span>
+          <a href="">по цене</a>
+          <a href="">по типу</a>
+          <a href="">по функционалу</a>
+          <div class="up-down"></div>
+        </div>
+        <div class="catalog__items clearfix">
+          <a href="" class="catalog__item">
+            <img src="img/catalog-img-desert.jpg" alt="">
+            <div class="catalog__block">
+              <div class="block-close"></div>
+              <h3>SUSET</h3>
+              <p>Интернет-магазин с личным магазином</p>
+              <span class="btn btn-catalog" href="">10000р</span>
+            </div>
+          </a>
+          <a href="" class="catalog__item">
+            <img src="img/catalog-img-aviator.jpg" alt="">
+            <div class="catalog__block">
+             <div class="block-close"></div>
+             <h3>SUSET</h3>
+             <p>Интернет-магазин с личным магазином</p>
+             <span class="btn btn-catalog" href="">10000р</span>
+           </div>
+         </a>
+         <a href="" class="catalog__item">
+          <img src="img/catalog-img-thai.jpg" alt="">
+          <div class="catalog__block">
+            <div class="block-close"></div>
+            <h3>SUSET</h3>
+            <p>Интернет-магазин с личным магазином</p>
+            <span class="btn btn-catalog" href="">10000р</span>
+          </div>
+        </a>
+        <a href="" class="catalog__item">
+          <img src="img/catalog-img-forte.jpg" alt="">
+          <div class="catalog__block">
+            <div class="block-close"></div>
+            <h3>SUSET</h3>
+            <p>Интернет-магазин с личным магазином</p>
+            <span class="btn btn-catalog" href="">10000р</span>
+          </div>
+        </a>
+        <a href="" class="catalog__item">
+          <img src="img/catalog-img-dovetail.jpg" alt="">
+          <div class="catalog__block">
+           <div class="block-close"></div>
+           <h3>SUSET</h3>
+           <p>Интернет-магазин с личным магазином</p>
+           <span class="btn btn-catalog" href="">10000р</span>
+         </div>
+       </a>
+       <a href="" class="catalog__item">
+        <img src="img/catalog-img-avenue.jpg" alt="">
+        <div class="catalog__block">
+          <div class="block-close"></div>
+          <h3>SUSET</h3>
+          <p>Интернет-магазин с личным магазином</p>
+          <span class="btn btn-catalog" href="">10000р</span>
+        </div>
+      </a>
+    </div>
+    <div class="catalog-paginators">
+      <a class="btn-paginator btn-paginator--current" href="#1">1</a>
+      <a class="btn-paginator" href="#2">2</a>
+      <a class="btn-paginator" href="#3">3</a>
+      <a class="btn-paginator btn-pagenator--next"  href="">Следующая</a>
+    </div>
+  </section>
+</section>
+<section class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3992.6350426854647!2d30.3182702!3d59.9766437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469633e2b1ad2a11%3A0x971185a819704408!2z0YPQuy4g0JDQutCw0LTQtdC80LjQutCwINCf0LDQstC70L7QstCwLCA0LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTcwMjI!5e0!3m2!1sru!2sua!4v1460032786100" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen"></iframe>     
+</section>
+
+<footer class="page-footer clearfix">
+  <div class="page-footer__social">
+    <a class="social social-vk" href=""></a>
+    <a class="social social-f" href=""></a>
+    <a class="social social-ins" href=""></a>
+  </div>
+  <div class="page-footer__text">
+    <h1>Давайте дружить, это выгодно!</h1>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
+  </div>
+</footer>
+<script type="text/javascript" src = "js/script.js" ></script>
+</body>
+</html>
